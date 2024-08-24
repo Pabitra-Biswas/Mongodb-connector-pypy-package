@@ -5,15 +5,15 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()     
    
 
-__version__ = "0.0.3"
-REPO_NAME = "Mongodb-connector-pypy-package"
+_version_ = "0.0.5"
+REPO_NAME = "mongodbconnector"
 PKG_NAME= "databaseautomation"
 AUTHOR_USER_NAME = "Pabitra-Biswas"
 AUTHOR_EMAIL = "p.pabitrabiswas02@gmail.com"
 
 setup(
     name=PKG_NAME,
-    version=__version__,
+    version=_version_,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
     description="A python package for connecting with database.",
