@@ -5,7 +5,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()     
    
 
-_version_ = "0.0.14"
+_version_ = "0.0.15"
 REPO_NAME = "mongodbconnector"
 PKG_NAME= "databaseautomation"
 AUTHOR_USER_NAME = "Pabitra-Biswas"
@@ -26,3 +26,16 @@ setup(
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     )
+
+
+
+
+
+
+# - name: Publish Python Package
+#   uses: pypa/gh-action-pypi-publish@release/v1
+#   with:
+#     password: ${{ secrets.PYPI_TOKEN }}
+#     repository-url: https://upload.pypi.org/legacy/
+#     # Use the commit SHA for reference or tagging
+#     commit-sha: b4bd8ea94bfefe02b247434b6f81323f6fbbea9c
