@@ -3,11 +3,10 @@ from typing import List
 
 with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()     
-   
 
-_version_ = "0.0.18"
+_version_ = "0.0.19"
 REPO_NAME = "Mongodb-connector-pypy-package"
-PKG_NAME= "mongodbdaatbaseautomation"
+PKG_NAME= "Mongodb Automation Project"  # Change this to a unique name
 AUTHOR_USER_NAME = "Pabitra-Biswas"
 AUTHOR_EMAIL = "p.pabitrabiswas02@gmail.com"
 
@@ -18,14 +17,14 @@ setup(
     author_email=AUTHOR_EMAIL,
     description="A python package for connecting with database.",
     long_description=long_description,
-    long_description_content="text/markdown",
+    long_description_content_type="text/markdown",  # Corrected this line
     url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    )
+)
 
 
 
